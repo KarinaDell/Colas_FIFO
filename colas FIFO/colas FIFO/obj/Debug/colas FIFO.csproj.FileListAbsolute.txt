@@ -1,0 +1,10 @@
+C:\Users\20135214\Desktop\Colas_FIFO-master\colas FIFO\colas FIFO\bin\Debug\colas FIFO.exe.config
+C:\Users\20135214\Desktop\Colas_FIFO-master\colas FIFO\colas FIFO\bin\Debug\colas FIFO.exe
+C:\Users\20135214\Desktop\Colas_FIFO-master\colas FIFO\colas FIFO\bin\Debug\colas FIFO.pdb
+C:\Users\20135214\Desktop\Colas_FIFO-master\colas FIFO\colas FIFO\obj\Debug\colas FIFO.csprojResolveAssemblyReference.cache
+C:\Users\20135214\Desktop\Colas_FIFO-master\colas FIFO\colas FIFO\obj\Debug\colas_FIFO.Form1.resources
+C:\Users\20135214\Desktop\Colas_FIFO-master\colas FIFO\colas FIFO\obj\Debug\colas_FIFO.Properties.Resources.resources
+C:\Users\20135214\Desktop\Colas_FIFO-master\colas FIFO\colas FIFO\obj\Debug\colas FIFO.csproj.GenerateResource.Cache
+C:\Users\20135214\Desktop\Colas_FIFO-master\colas FIFO\colas FIFO\obj\Debug\colas FIFO.csproj.CoreCompileInputs.cache
+C:\Users\20135214\Desktop\Colas_FIFO-master\colas FIFO\colas FIFO\obj\Debug\colas FIFO.exe
+C:\Users\20135214\Desktop\Colas_FIFO-master\colas FIFO\colas FIFO\obj\Debug\colas FIFO.pdb

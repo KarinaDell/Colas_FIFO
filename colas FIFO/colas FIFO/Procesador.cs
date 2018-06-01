@@ -14,12 +14,16 @@ namespace colas_FIFO
         private int cont, vacio, completo, ultimo, ciclo;
         private int ciclos = 300;
 
-     public void iniciarProceso()
+        public void iniciarProcesador()
         {
-            ciclos = 300;
+           
             while(ciclos > 0)
             {
-                atenderProceso();
+                int r;
+                r = rnd.Next(1, 101);
+                if (r <= 35)
+                    agregarProceso( new Proceso(cont++, rnd.Next(4, 15)));
+                //agregarProceso();
                 if (inicio != null)
                     reducirCiclos();
                 else
@@ -31,33 +35,58 @@ namespace colas_FIFO
 
         }
 
-        private void atenderProceso()
-        {
-            int r;
-           for(int i = 1; i <=300; i++)
-            {
-                r = rnd.Next(1, 101);
-                if (r <= 35)
-                    proceso.agregarPrceso();
-            }
-        }
 
-       private void agregarProceso()
+       private void agregarProceso(Proceso nuevo)
         {
+            
+
             if (inicio == null)
-                inicio = proceso = new Proceso(cont++, rnd.Next(4, 15));
+                inicio = nuevo;
             else
-                agregarProcesoRecursivo(inicio);
+                agregarProcesoRec(inicio, nuevo);
         }
 
-        private void agregarProcesoRecursivo(Proceso t)
+        private void agregarProcesoRec(Proceso t, Proceso nuevo)
         {
             if (t.sig == null)
-                t.sig = proceso = new Proceso(cont++, rnd.Next(4, 15));
+                t.sig = proceso = nuevo;
             else
-                agregarProcesoRecursivo(t.sig);
+                agregarProcesoRec(t.sig, nuevo);
         }
 
+        private void nuevoInicio()
+        {
+            inicio = inicio.sig;
         }
+
+        private void reducirCiclos()
+        {
+            inicio.Duracion--;
+            if (inicio.Duracion == 0)
+                nuevoInicio();
+        }
+
+        private int obtenerUltimoProceso(Proceso t)
+        {
+            if (t.sig == null)
+                return t.Cuantos;
+            else
+                return t.Cuantos + obtenerUltimoProceso(t.sig);
+        }
+        //3 4 1 
+        public int obtenerCiclosVacios()
+        {
+            Proceso t = inicio;
+            while(t != null)
+            {
+                ciclo += inicio.Duracion;
+                t = t.sig;
+            }
+            return ciclo;
+        }
+        
+
+        
+        
     }
 }

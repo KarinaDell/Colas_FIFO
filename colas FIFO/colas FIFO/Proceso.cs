@@ -14,7 +14,7 @@ namespace colas_FIFO
         public Proceso sig;
 
         public int Cuantos { get => cuantos; set => cuantos = value; }
-        public int Duracion { get => duracion; }
+        public int Duracion { get => duracion; set => duracion = value; }
 
         public Proceso (int cuantos, int duracion)
         {
@@ -22,9 +22,6 @@ namespace colas_FIFO
             this.duracion = duracion;
         }
 
-        public override string ToString()
-        {
-            return "Proceso " + cuantos.ToString() + "Duracion: " + duracion;
-        }
+       
     }
 }
