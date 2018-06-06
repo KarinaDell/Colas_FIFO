@@ -84,6 +84,7 @@
             this.txtCiclosVacios.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCiclosVacios.Location = new System.Drawing.Point(189, 82);
             this.txtCiclosVacios.Name = "txtCiclosVacios";
+            this.txtCiclosVacios.ReadOnly = true;
             this.txtCiclosVacios.Size = new System.Drawing.Size(100, 24);
             this.txtCiclosVacios.TabIndex = 4;
             // 
@@ -92,6 +93,7 @@
             this.txtProcesoComp.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProcesoComp.Location = new System.Drawing.Point(189, 108);
             this.txtProcesoComp.Name = "txtProcesoComp";
+            this.txtProcesoComp.ReadOnly = true;
             this.txtProcesoComp.Size = new System.Drawing.Size(100, 24);
             this.txtProcesoComp.TabIndex = 5;
             // 
@@ -100,6 +102,7 @@
             this.txtProcesoPen.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtProcesoPen.Location = new System.Drawing.Point(189, 136);
             this.txtProcesoPen.Name = "txtProcesoPen";
+            this.txtProcesoPen.ReadOnly = true;
             this.txtProcesoPen.Size = new System.Drawing.Size(100, 24);
             this.txtProcesoPen.TabIndex = 6;
             // 
@@ -108,6 +111,7 @@
             this.txtCiclosPen.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCiclosPen.Location = new System.Drawing.Point(189, 163);
             this.txtCiclosPen.Name = "txtCiclosPen";
+            this.txtCiclosPen.ReadOnly = true;
             this.txtCiclosPen.Size = new System.Drawing.Size(100, 24);
             this.txtCiclosPen.TabIndex = 7;
             // 
