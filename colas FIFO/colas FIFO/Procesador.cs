@@ -33,7 +33,7 @@ namespace colas_FIFO
                 ciclos--;
             }
             //completo = inicio.Cuantos - 1;
-            ultimo = obtenerUltimoProceso(inicio) - completo;
+            ultimo = obtenerUltimoProceso(inicio);// - completo;
 
         }
 
@@ -67,14 +67,20 @@ namespace colas_FIFO
                 nuevoInicio();
                 completo++;
             }
+
         }
 
         private int obtenerUltimoProceso(Proceso t)
         {
+            //  1+2
+            //     1+1
+            //         1
+            //  3  1000   6000     cuantos
+            //  6  4   2     duracion
             if (t.sig == null)
-                return t.Cuantos;
+                return 1;
             else
-                return obtenerUltimoProceso(t.sig);
+                return 1 + obtenerUltimoProceso(t.sig);
         }
 
         public int obtenerCiclosVacios()
